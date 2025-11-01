@@ -1,0 +1,16 @@
+{
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "editor.formatOnSave": false,
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "vetur.validation.template": false, // 关闭模板验证
+  "vetur.experimental.templateInterpolationService": false
+}

@@ -1,0 +1,76 @@
+.hi-card {
+  margin: 0 -16px;
+  overflow: hidden;
+
+  &-content {
+    margin: 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    width: 100%;
+    margin: 0 8px 16px;
+    box-sizing: border-box;
+    border-radius: var(--hi-card-border-radius);
+    padding: 16px;
+    transition: box-shadow 0.3s;
+    border: 1px solid var(--td-gray-color-4);
+    
+    /* 媒体查询 */
+    @media screen and  (min-width: 768px) {
+      width: var(--xs-width);
+    }
+    @media screen and  (min-width: 960px) {
+      width: var(--sm-width);
+    }
+    @media screen and  (min-width: 1280px) {
+      width: var(--md-width);
+    }
+    @media screen and  (min-width: 1680px) {
+      width: var(--lg-width);
+    }
+    @media screen and  (min-width: 1920px) {
+      width: var(--xl-width);
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &--active {
+      border-color: var(--td-brand-color);
+    }
+
+    &--header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      &_icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+      }
+      &_title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--td-font-gray-1);
+        margin-bottom: 8px;
+      }
+    }
+
+    &--content {
+      width: calc(100% - 40px);
+      // height: var(--hi-card-height);
+      color: var(--td-font-gray-2);
+      font-size: 14px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+    }
+  }
+}
