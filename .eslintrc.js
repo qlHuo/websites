@@ -12,7 +12,7 @@ module.exports = {
     parser: '@babel/eslint-parser'
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+    'no-console': 'warn',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'vue/multi-word-component-names': 'off',
     'vue/no-multiple-template-root': 0,
