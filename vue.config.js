@@ -2,7 +2,8 @@
  * @description Vue项目配置文件
  */
 module.exports = {
-  publicPath: '/',
+  // 👉 替换为你的仓库名（必须带前后斜杠）
+  publicPath: process.env.NODE_ENV === 'production' ? '/websites/' : '/',
   outputDir: 'dist',
   assetsDir: 'static',
   pages: {

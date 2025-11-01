@@ -41,7 +41,7 @@ jobs:
 
       # 步骤 4：构建项目
       - name: Build project
-        run: npm run build
+        run: npm run build:production
         env:
           # 可选：配置环境变量
           VUE_APP_BASE_URL: ${{ secrets.VUE_APP_BASE_URL }}
