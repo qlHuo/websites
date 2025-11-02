@@ -66,10 +66,9 @@
         </div>
         <div class="nav-content-wrapper-list">
           <div class="nav-content-list-item" v-for="item in websiteData" :key="item.id">
-            <h3 :id="item.key">{{ item.title }}</h3>
+            <h3 class="mb-0" :id="item.key">{{ item.title }}</h3>
             <HiCard :col="4" :gutter="16" :xl="6" :lg="5" :md="4" :sm="3" :xs="2">
               <HiCardItem
-                style="background-color: var(--td-font-white-1)"
                 v-for="(child, index) in item.children"
                 :key="index"
                 :icon="child.icon"
